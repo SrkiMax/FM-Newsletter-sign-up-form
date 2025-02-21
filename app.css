@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    //border: 1px solid black;
+}
+
+:root {
+    /* Colors  */
+    --Pale-Navy: #36384E;
+    --Dark-Navy: #242742;
+    --Grey: #9294A0;
+    --Vermelion: #FF6155;
+
+    --Tomato: #FF6257;
+
+    /*Button linear gradient colors*/
+
+    --Gradient: #FF6A3A;
+    --Gradient2: #FF527B;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+
+body {
+    background-color: var(--Pale-Navy);
+    font-family: "Roboto", serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+
+}
+
+
+.signupCard {
+    border-radius: 2rem;
+    margin: 0 auto;
+    border: none;
+    width: 100%;
+    max-width: 928px;
+    display: none;
+}
+
+.card-title {
+    color: var(--Dark-Navy);
+    font-size: 3.5rem;
+}
+
+.card-text {
+    margin-top: 1.5rem;
+}
+
+.signupCard-body p {
+    font-size: 16px;
+    color: var(--Dark-Navy);
+}
+
+
+.signupCard-body {
+    padding: 3rem;
+    /* Be cautious with this one, this one can make my image be shorter than the .card */
+    padding-top: 7rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.6rem;
+    margin-bottom: 2.5rem;
+}
+
+ul li {
+    list-style-type: none;
+    margin-left: -32px;
+    font-size: 16px;
+}
+
+ul li img {
+    margin-right: 15px;
+}
+
+form label {
+    display: flex;
+    justify-content: space-between;
+}
+
+p.emailAddress,
+p.error-email {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+}
+
+.error-email {
+    color: var(--Tomato) !important;
+    display: none;
+}
+
+.error-email.active {
+    //display: block;
+    /* Show when 'active' class is added */
+}
+
+
+input[type="email"] {
+    width: 100%;
+    height: 3.25rem;
+    border-radius: 0.5rem;
+    padding-left: 2rem;
+    margin-top: -10px;
+    margin-bottom: 1.5rem;
+}
+
+/*Testing if we can add error class to email input*/
+.error {
+    border: 1px solid var(--Gradient2);
+    color: var(--Tomato);
+    background-color: rgba(255, 97, 85, 0.15);
+}
+
+
+.btn {
+    width: 100%;
+    background-color: var(--Dark-Navy);
+    font-size: 16px;
+    height: 3.25rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.btn:active,
+.btn:hover {
+    background: linear-gradient(to bottom, #FF6A3A 0%, #FF527B 50%, #FF527B 100%);
+}
+
+
+.signupCard-image {
+    padding: 2rem;
+}
+
+
+/* Success Message*/
+
+.successMsg {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border: none;
+    width: 100%;
+    padding: 0;
+}
+
+.card-success {
+    border-radius: 2rem;
+    max-width: 504px !important;
+    padding: 2rem;
+    margin: 0 auto;
+    border: none;
+    width: 100%;
+    display: none;
+
+}
+
+.card-success .successImage {
+    width: 64px;
+    margin-bottom: 2rem;
+}
+
+.dismiss-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*Active states*/
+
+.active {
+    display: block;
+}
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+
+/*Media queries*/
+
+
+@media (max-width: 992px) {
+    .signupCard-body {
+        padding: 2rem;
+    }
+
+
+    .card-title {
+        font-size: 2rem;
+    }
+
+    .signupCard-body p {
+        font-size: 14px;
+    }
+
+    ul {
+        gap: 0.4rem;
+        margin-bottom: 2rem;
+    }
+
+    ul li {
+        font-size: 14px;
+    }
+
+    p.emailAddress,
+    p.error-email {
+        font-size: 0.8rem;
+        margin-bottom: 0;
+    }
+
+    input[type="email"] {
+        margin-top: -20px;
+        margin-bottom: 1.2rem;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+
+    .signupCard-image {
+        padding: 1rem;
+    }
+
+    .card-success .card-title {
+        font-size: 3.5rem;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+
+    .container {
+        padding: 0;
+    }
+
+    .signupCard {
+        padding: 0;
+        max-width: 375px !important;
+        margin-top: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+
+    .signupCard .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .signupCard-image {
+        padding: 0;
+        border-radius: 0 0 1rem 1rem;
+    }
+
+    .signupCard-info {
+        padding: 1rem;
+    }
+
+    .card-success .card-title {
+        font-size: 2rem;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .card-success .successImage {
+        width: 64px;
+        margin-top: 5rem;
+    }
+
+    .card-success p {
+        margin-bottom: 10rem;
+    }
+}

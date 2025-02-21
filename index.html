@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+
+  <!-- Sign-up form start -->
+
+  <div class="container container-fluid">
+    <div class="card signupCard mb-3 active" style="max-width: 928px">
+      <div class="row g-0">
+
+        <div class="col-md-6 col-sm-12 signupCard-info">
+          <div class="card-body signupCard-body">
+            <h1 class="card-title bold">Stay updated!</h1>
+            <p class="card-text">Join 60,000+ product managers receiving monthly updates on:</p>
+            <ul>
+              <li><img src="assets/images/icon-list.svg" alt="">Product discovery and building what matters</li>
+              <li><img src="assets/images/icon-list.svg" alt="">Measuring to ensure updates are a success</li>
+              <li><img src="assets/images/icon-list.svg" alt="">And much more!</li>
+            </ul>
+
+
+            <form accept-charset="UTF-8" action="action_page.php" autocomplete="off" method="GET" target="_blank"
+              novalidate>
+              <label for="email">
+                <p class="bold emailAddress">Email address</p>
+                <p class="error-email">Valid email required</p>
+              </label><br />
+              <input name="email" type="email" class="email" value="email@company.com" /> <br />
+
+              <button class="btn btn-dark btn-lg signup-button" type="submit">Subscribe to monthly
+                newsletter</button>
+
+
+            </form>
+
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 signupCard-image">
+          <picture>
+            <source media="(min-width: 768px)" srcset="assets/images/illustration-sign-up-desktop.svg">
+            <img src="assets/images/illustration-sign-up-mobile.svg" class="img-fluid" alt="sign up desktop">
+          </picture>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+    <!---->
+
+    <section class="successMsg">
+
+
+      <div class="card card-success col-md-5 col-sm-12" style="max-width: 504px">
+        <div class="card-body">
+          <img src="assets/images/icon-success.svg" class="successImage" alt="">
+          <h1 class="card-title bold">Thanks for subscribing</h1>
+          <p class="card-text">A confirmation email has been sent to <span
+              class="user-email bold">ash@loremcompany.com</span>.
+            Please open it and click the button inside to confirm your subscription.</p>
+          <a href="#" class="btn btn-dark dismiss-button">Dismiss message</a>
+        </div>
+      </div>
+
+
+    </section>
+
+
+  </div>
+
+
+
+
+
+
+
+  <!-- Success message end -->
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Srdjan Maksimovic</a>.
+  </div>
+
+
+
+
+  <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
