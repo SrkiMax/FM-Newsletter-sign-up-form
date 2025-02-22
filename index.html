@@ -20,76 +20,76 @@
 <body>
 
   <!-- Sign-up form start -->
+  <main>
+    <div class="container container-fluid">
+      <div class="card signupCard mb-3 active" style="max-width: 928px">
+        <div class="row g-0">
 
-  <div class="container container-fluid">
-    <div class="card signupCard mb-3 active" style="max-width: 928px">
-      <div class="row g-0">
-
-        <div class="col-md-6 col-sm-12 signupCard-info">
-          <div class="card-body signupCard-body">
-            <h1 class="card-title bold">Stay updated!</h1>
-            <p class="card-text">Join 60,000+ product managers receiving monthly updates on:</p>
-            <ul>
-              <li><img src="assets/images/icon-list.svg" alt="">Product discovery and building what matters</li>
-              <li><img src="assets/images/icon-list.svg" alt="">Measuring to ensure updates are a success</li>
-              <li><img src="assets/images/icon-list.svg" alt="">And much more!</li>
-            </ul>
-
-
-            <form accept-charset="UTF-8" action="action_page.php" autocomplete="off" method="GET" target="_blank"
-              novalidate>
-              <label for="email">
-                <p class="bold emailAddress">Email address</p>
-                <p class="error-email">Valid email required</p>
-              </label><br />
-              <input name="email" type="email" class="email" placeholder="email@company.com" /> <br />
-
-              <button class="btn btn-dark btn-lg signup-button" type="submit">Subscribe to monthly
-                newsletter</button>
+          <div class="col-md-6 col-sm-12 signupCard-info">
+            <div class="card-body signupCard-body">
+              <h1 class="card-title bold">Stay updated!</h1>
+              <p class="card-text">Join 60,000+ product managers receiving monthly updates on:</p>
+              <ul>
+                <li><img src="assets/images/icon-list.svg" alt="">Product discovery and building what matters</li>
+                <li><img src="assets/images/icon-list.svg" alt="">Measuring to ensure updates are a success</li>
+                <li><img src="assets/images/icon-list.svg" alt="">And much more!</li>
+              </ul>
 
 
-            </form>
+              <form accept-charset="UTF-8" action="action_page.php" autocomplete="off" method="GET" target="_blank"
+                novalidate>
+                <label for="email">
+                  <p class="bold emailAddress">Email address</p>
+                  <p class="error-email">Valid email required</p>
+                </label><br />
+                <input name="email" type="email" class="email" placeholder="email@company.com" /> <br />
+
+                <button class="btn btn-dark btn-lg signup-button" type="submit">Subscribe to monthly
+                  newsletter</button>
+
+
+              </form>
+
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 signupCard-image">
+            <picture>
+              <source media="(min-width: 768px)" srcset="assets/images/illustration-sign-up-desktop.svg">
+              <img src="assets/images/illustration-sign-up-mobile.svg" class="img-fluid" alt="sign up desktop">
+            </picture>
 
           </div>
         </div>
-        <div class="col-md-6 col-sm-12 signupCard-image">
-          <picture>
-            <source media="(min-width: 768px)" srcset="assets/images/illustration-sign-up-desktop.svg">
-            <img src="assets/images/illustration-sign-up-mobile.svg" class="img-fluid" alt="sign up desktop">
-          </picture>
-
-        </div>
       </div>
+
+
+      <!-- Sign-up form end -->
+
+      <!-- Success message start -->
+      <!---->
+
+      <section class="successMsg">
+
+
+        <div class="card card-success col-md-5 col-sm-12" style="max-width: 504px">
+          <div class="card-body">
+            <img src="assets/images/icon-success.svg" class="successImage" alt="">
+            <h2 class="card-title bold">Thanks for subscribing</h2>
+            <p class="card-text">A confirmation email has been sent to <span
+                class="user-email bold">ash@loremcompany.com</span>.
+              Please open it and click the button inside to confirm your subscription.</p>
+            <a href="#" class="btn btn-dark dismiss-button">Dismiss message</a>
+          </div>
+        </div>
+
+
+      </section>
+
+
     </div>
 
 
-    <!-- Sign-up form end -->
-
-    <!-- Success message start -->
-    <!---->
-
-    <section class="successMsg">
-
-
-      <div class="card card-success col-md-5 col-sm-12" style="max-width: 504px">
-        <div class="card-body">
-          <img src="assets/images/icon-success.svg" class="successImage" alt="">
-          <h2 class="card-title bold">Thanks for subscribing</h2>
-          <p class="card-text">A confirmation email has been sent to <span
-              class="user-email bold">ash@loremcompany.com</span>.
-            Please open it and click the button inside to confirm your subscription.</p>
-          <a href="#" class="btn btn-dark dismiss-button">Dismiss message</a>
-        </div>
-      </div>
-
-
-    </section>
-
-
-  </div>
-
-
-
+  </main>
 
 
 
