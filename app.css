@@ -296,4 +296,10 @@ input[type="email"] {
     .card-success p {
         margin-bottom: 10rem;
     }
+
+
+
+    .signupCard {
+        margin-top: 12rem !important;
+    }
 }
