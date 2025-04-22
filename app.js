@@ -11,14 +11,13 @@ const dismissBtn = document.querySelector(".dismiss-button");
 
 const form = document.querySelector("form");
 
-
+/*
 function validateEmail(email) {
 
-}
+}  */
 
 
 form.addEventListener("submit", (event) => {
-    //submitBtn.addEventListener("click", (event) => {
     event.preventDefault();
 
     const email = emailInput.value;
